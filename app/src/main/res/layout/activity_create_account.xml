@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".CreateAccount">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/createEmailEdt"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/createUserNameEdt"
+            android:hint="@string/username_hint"
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/createPasswordEdt"
+            android:hint="@string/password_hint"
+            android:paddingTop="5dp"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.dd.processbutton.iml.ActionProcessButton
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Create Account"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            custom:pb_colorComplete="@color/green_complete"
+            custom:pb_colorNormal="@color/blue_normal"
+            custom:pb_colorPressed="@color/blue_pressed"
+            custom:pb_colorProgress="@color/purple_progress"
+            custom:pb_textComplete="Success"
+            custom:pb_textProgress="Loading"
+            custom:pb_textError="Error"
+            custom:pb_colorError="@color/red_error" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/loginUsernameEdt"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="50dp"
+        android:inputType="text"
+        android:hint="@string/username_hint"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/loginPasswordEdt"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/loginUsernameEdt"
+        android:paddingTop="12dp"
+        android:inputType="textPassword"
+        android:hint="@string/password_hint"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"/>
+
+    <com.dd.processbutton.iml.ActionProcessButton
+        android:id="@+id/loginScreenBtn"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login_text"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_below="@+id/loginPasswordEdt"
+        custom:pb_colorComplete="@color/green_complete"
+        custom:pb_colorNormal="@color/blue_normal"
+        custom:pb_colorPressed="@color/blue_pressed"
+        custom:pb_colorProgress="@color/purple_progress"
+        custom:pb_textComplete="Success"
+        custom:pb_textProgress="Loading"
+        custom:pb_textError="Error"
+        custom:pb_colorError="@color/red_error" />
+
+
+</RelativeLayout>
